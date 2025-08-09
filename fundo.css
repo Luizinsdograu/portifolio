@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-image: url(imagem/fundo.png);
+
+}
+.icone{
+    width:70px;
+    height: 7%;
+    background-image: url("imagem/image-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: anima linear infinite;
+    animation-duration: calc(500s / var(--i));
+
+}
+.imagens{
+    position: center;
+}
+
+@keyframes anima {
+    0%{
+        transform: translateY(100vh) scale(0) rotate(0deg);
+    }
+    50%{
+        transform: translateY(-5vh) scale(1) rotate(360deg);
+    }
+    100%{
+        transform: translateY(-10vh) scale(2) rotate(500deg);
+    }
+}
